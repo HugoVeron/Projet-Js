@@ -11,11 +11,11 @@ function Media(title,duration,isPlaying)
 		isPlaying = true;
 		// Lire le fichier audio ou vidéo
 		// Passer isPlaying à True
-
 	}
 
 	this.stop = function()
 	{
+		isPlaying = false;
 		// Stopper le fichier audio ou vidéo
 		// Passer isPlaying à False
 	}
