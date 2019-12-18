@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amazing Playlist</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+	<video id="Video1" > 
+	//  Replace these with your own video files.  
+		 <source src="demo.mp4" type="video/mp4" /> 
+		 <source src="demo.ogv" type="video/ogg" /> 
+		 HTML5 Video is required for this example.  
+		 <a href="demo.mp4">Download the video</a> file.  
+	</video> 
+	 
+	<div id="buttonbar"> 
+		<button id="restart" onclick="restart();">[]</button>  
+		<button id="rew" onclick="skip(-10)">&lt;&lt;</button> 
+		<button id="play" onclick="vidplay()">&gt;</button> 
+		<button id="fastFwd" onclick="skip(10)">&gt;&gt;</button> 
+	</div> 
+  </body>
+</html>
+</head> 
+<body>         
+ 
