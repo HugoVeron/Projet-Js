@@ -1,17 +1,17 @@
 // The playlist object
 
-function Playlist(liste_media)
+function Playlist()
 {
-	this.liste_media = liste_media;
+
 
 	this.add = function() // Méthode pour ajouter un media existant à la playlist
 	{
 
 	}
 
-	this.play = function() // Méthode pour lire la playlist
+	this.playmedia = function() // Méthode pour lire la playlist
 	{
-
+		document.getElementById('plk').play();
 	}
 
 	this.next = function() // Méthode pour passer au prochain media
@@ -32,3 +32,5 @@ function Playlist(liste_media)
 	}
 		
 }
+
+Playlist.playmedia();

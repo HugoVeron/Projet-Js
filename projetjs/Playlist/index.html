@@ -7,22 +7,28 @@
   </head>
 
   <body>
-	<video id="Video1" > 
-	//  Replace these with your own video files.  
-		 <source src="demo.mp4" type="video/mp4" /> 
-		 <source src="demo.ogv" type="video/ogg" /> 
-		 HTML5 Video is required for this example.  
-		 <a href="demo.mp4">Download the video</a> file.  
-	</video> 
-	 
-	<div id="buttonbar"> 
-		<button id="restart" onclick="restart();">[]</button>  
-		<button id="rew" onclick="skip(-10)">&lt;&lt;</button> 
-		<button id="play" onclick="vidplay()">&gt;</button> 
-		<button id="fastFwd" onclick="skip(10)">&gt;&gt;</button> 
-	</div> 
+  	<header>
+  		<h1 class="titre_principal">Amazing Playlist</h1>
+  	</header>
+
+  	<section>
+  		<article class="my_playlist">
+		  	<p id="plktext" class="mp3media">PLK - Un peu de haine<audio controls src="../media/plk-un-peu-de-haine-clip-officiel.mp3" id="plk"></audio><button type="button" id="likeplk"><img src="../image/unlike.png" alt="like or unlike"></button></p>
+		  	<p id="rhcptext1" class="mp3media">Red Hot Chili Peppers - Californication<audio controls src="../media/red-hot-chili-peppers-californication-official-music-video.mp3" id="rhcp1"></audio><button type="button" id="likerhcp1"><img src="../image/unlike.png" alt="like or unlike"></button></p>
+		  	<p id="rhcptext2" class="mp3media">Red Hot Chili Peppers - Snow Hey Oh<audio controls src="../media/red-hot-chili-peppers-snow-hey-oh.mp3" id="rhcp2"></audio><button type="button" id="likerhcp2"><img src="../image/unlike.png" alt="like or unlike"></button></p>
+		  	<p id="vivalditext1" class="mp3media">Vivaldi - Summer<audio controls src="../media/vivaldi-summer-the-four-seasons.mp3" id="vivaldi1"></audio><button type="button" id="likevivaldi1"><img src="../image/unlike.png" alt="like or unlike"></button></p>
+		  	<p id="vivalditext2" class="mp3media">Vivaldi - Winter<audio controls src="../media/vivaldi-winter-the-four-seasons.mp3" id="vivaldi2"></audio><button type="button" id="likevivaldi2"><img src="../image/unlike.png" alt="like or unlike"></button></p>
+		  	<button type="button" id="btn-play">Play</button>
+		  	<button type="button" id="btn-next">Next</button>
+		  	<button type="button" id="btn-stop">Stop</button>
+			<script type="text/javascript" src="playlist.js"></script>
+		</article>
+	</section>
+
+	<footer>
+		
+	</footer>
   </body>
 </html>
-</head> 
-<body>         
+        
  

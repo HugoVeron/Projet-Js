@@ -21,11 +21,25 @@ function Media(title,duration,isPlaying)
 	}
 }
 
-function Song(title,duration,isPlaying,artist)
+function Song(title,duration,isPlaying,artist,year,path)
 {
-	Media.call(this,title,duration,isPlaying);
+	Media.call(this,title,duration,isPlaying,path);
 
+	this.title = title;
+	this.duration = duration;
 	this.artist = artist;
+	this.year = year;
+	this.path = path;
+
+	this.toHTML =  function()
+	{
+		let paragraphe = document.createElement('p');
+		paragraphe.setAttribute("")
+		let audio = document.createElement('audio');
+		let button = document.createElement('button');
+		let image = document.createElement('img');
+
+	}
 }
 
 Song.prototype = Object.create(Media.prototype);
