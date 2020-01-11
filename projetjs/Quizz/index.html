@@ -1,11 +1,54 @@
-</<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Amazing Quiz</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+<!DOCTYPE html>
+<html>
 
-  <body>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Amazing Quizz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id = "myHeading"> Amazing Quizz</h1>
+        <nav class="mainmenu">                                          
+            <a class="menufirst" href="..\Playlist\index.html">Playlist</a>
+            <a class="menulast" href="..\Quizz\index.html">Quizz</a>
+            <br/><br/>
+        </nav>
+    </header>
+    <div id="pour_recentrer">
+        <button id = "commencer">commencer le quizz</button>
+        <div id="libre">
+            <!--<article id="my_playlist">-->
+            <label for="titre" id="titre"></label>
+            <input type="text" name="titre_input" id="titre_input" required>
+            <span id="aidetitre"></span>
+            <!--</article>-->
+        </div>
+        
+        <div id="QCM">
+            <label for="question" id="question"></label>
+			<div>
+				<input type="checkbox" id="checkbox1" name="checkbox1">
+				<label for="checkbox1" id="option1">option1</label>
+			</div>
+            <div>
+				<input type="checkbox" id="checkbox2" name="checkbox2">
+				<label for="checkbox2" id="option2">option2</label>
+			</div>
+        </div>
+
+        <div>
+            <label for="bonnes_reponses" id="bonnes_reponses">playlist</label>
+        </div>
+	<button id = "valider">valider la réponse</button>
+    </div>
+    <script src="..\Playlist\song.js"></script>
+    <script src="..\Playlist\playlist.js"></script>
+    <script src="..\Playlist\app.js"></script>
+	<script src = "quizz.js"></script>
+	
+
+  </body>
+
 </html>

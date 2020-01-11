@@ -70,7 +70,7 @@ function Song(title,duration,isPlaying,artist,year,path)
 
 Song.prototype = Object.create(Media.prototype);
 
-function Movie(title,duration,isPlaying,year,producer,path)
+function Movie(title,duration,isPlaying,producer,year,path)
 {
 	Media.call(this,title,duration,isPlaying);
 

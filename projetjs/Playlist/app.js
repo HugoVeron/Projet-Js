@@ -5,7 +5,7 @@ media_2 = ["song","Rien d'spécial","0:16","false","Népal","2019","../media/nep
 media_3 = ["song","Summer The Four Seasons","0:16","false","Vivaldi","1723","../media/vivaldi-summer-the-four-seasons.mp3"];
 media_4 = ["song","Mach den hub hub hub","0:16","false","Tobee","2017","../media/tobee-helikopter-117-mach-den-hub-hub-hub-offizielles-video.mp3"];
 media_5 = ["song","Californication","0:16","false","Red Hot Chili Peppers","1999","../media/red-hot-chili-peppers-californication-official-music-video.mp3"];
-media_6 = ["video","Abordable","0:10","false","2019","Sardoche","../media/Sardoche_react.mp4"]
+media_6 = ["video","Abordable","0:10","false","Sardoche","2019","../media/Sardoche_react.mp4"]
 
 list_of_media = [];
 
