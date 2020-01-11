@@ -31,7 +31,7 @@ h1
   padding-bottom: 0.1em;
 }
 
-.mp3media
+.mp3media, .mp4media
 {
   background: #fc1260;
   margin: 0;
@@ -39,15 +39,27 @@ h1
   color: white;
 }
 
-#plk, #rhcp1, #rhcp2, #vivaldi1, #vivaldi2
+#my_playlist>p
+{
+  text-align: center
+}
+
+#my_playlist>p>audio, #my_playlist>p>video
 {
   display: none;
 }
 
-#plktext, #rhcptext1, #rhcptext2, #vivalditext1, #vivalditext2
+#control_on_playlist
 {
   text-align: center;
-  background: 
+  margin:0;
+  background: #23A78F;
+}
+
+#control_on_playlist>button
+{
+  width: 60px;
+  height: 30px;
 }
 
 button 
@@ -62,6 +74,11 @@ button
     display: inline-block;
     font-size: 12px;
     margin : 0.3em;
+}
+
+button:hover
+{
+  cursor: pointer;
 }
 
 
