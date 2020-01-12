@@ -240,3 +240,26 @@ button:hover
 }
 
 /* header */
+
+/* footer */
+
+.footerhome
+{
+  margin: auto;
+  text-align: center;
+  background-color: snow;
+  /*text-shadow: 1px 1px 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black;*/
+  font-style: italic;
+  border-top: 2px solid silver;
+}
+
+.mentionlegal
+{
+  font-size: 1em;
+}
+
+.prev
+{
+  color: white;
+  font-style: oblique;
+}
