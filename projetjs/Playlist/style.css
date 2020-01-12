@@ -209,18 +209,20 @@ button:hover
 .menulast
 {
   border-left:2px solid gold;
+  text-align: center;
 }
 
 .menufirst, .menulast
 {
   display: inline-block;
   cursor:pointer;
-  width:325px;
-  height: 50px;
+  width:50%;
+  height: 100%;
   color:#f7bb45;
   font-size:1.5em;
   text-decoration: none;
   padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 

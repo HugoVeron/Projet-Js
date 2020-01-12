@@ -8,16 +8,6 @@
 
 /* Reset */
 
-	html, body, div, applet, object, iframe, h1, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 2%;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
-    font-family: 'Source Sans Pro';
-	}
-
 span{
 	font-size: 90%;
 }
@@ -120,15 +110,16 @@ header
 
 .menufirst, .menulast
 {
-	display: inline-block;
-	cursor:pointer;
-	width:325px;
-	height: 50px;
-	color:#f7bb45;
-	font-size:1.5em;
-	text-decoration: none;
-	padding-top: 10px;
-	text-align: center;
+  display: inline-block;
+  cursor:pointer;
+  width:50%;
+  height: 100%;
+  color:#f7bb45;
+  font-size:1.5em;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .menufirst:hover, .menulast:hover
