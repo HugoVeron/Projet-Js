@@ -7,7 +7,8 @@ function entierAleatoire(min, max)
 document.getElementById('QCM').style.visibility='hidden';
 document.getElementById('libre').style.visibility='hidden';
 document.getElementById('valider').style.visibility='hidden';
-//document.getElementById('bonnes_reponses').style.visibility='hidden';
+document.getElementById('next').style.visibility='hidden';
+document.getElementById('bonnes_reponses').style.visibility='hidden';
 document.getElementById("confirmation_connexion").style.visibility="hidden"
 
 let audio;// Création de la balise pour jouer les musiqques lors du blind test
@@ -27,6 +28,7 @@ let type_question = entierAleatoire(1,2);//permet de déterminer le type de ques
 let type_media = list_of_media[num_playlist][0]; //on prend le type de media pour determiner quelles question on va poser 
 document.getElementById("commencer").addEventListener('click', () => {//on commence le quizz quand on appuie sur le bouton "commencer le quizz"
 	document.getElementById('valider').style.visibility='initial';//on affiche le bouton "valider"
+	document.getElementById('next').style.visibility='initial';
 	document.getElementById('commencer').style.visibility='hidden';
 	if (type_media == "video")//on pose la question relative à la vidéo(film)
 	{
@@ -82,27 +84,8 @@ document.getElementById("commencer").addEventListener('click', () => {//on comme
 			audio.setAttribute("src",list_of_media[num_playlist][6]);
 			audio.play();
 			music_is_playing = true;
-			document.getElementById("titre").innerText="rentrez le titre de la chanson" ;
-			num_playlist = entierAleatoire(0,list_of_media.length-1);
-			mauvaise_rep = entierAleatoire(0,list_of_media.length-1);
-			texte_input = document.getElementById("titre_input").value;
-			document.getElementById("valider").addEventListener('click', () => 
-			{
-				if (type_media == "song" && nb_question==1 && type_question == 2)
-				{
-					if(document.getElementById("titre_input").value.toString() == list_of_media[num_playlist][1].toString )
-					{
-						bonnes_rep+=1;
-						document.getElementById('bonnes_reponses').innerText="pour_l'incrémentation"+bonnes_rep;
-						document.getElementById('bonnes_reponses').innerText=document.getElementById("titre_input").value;
-					}
-					document.getElementById('bonnes_reponses').innerText=(document.getElementById("titre_input").value.toString() == list_of_media[num_playlist][1].toString );
-				}
-			});
-			document.getElementById("titre_input").value = "";
-			bonne_option = entierAleatoire(1,2);
-			type_question = entierAleatoire(1,2);
-			type_media = list_of_media[num_playlist][0];
+			document.getElementById("titre_input").innerText='';
+			document.getElementById("titre").value="rentrez le titre de la chanson" ;
 			document.getElementById('libre').style.visibility='initial';
 			document.getElementById('QCM').style.visibility='hidden';
 		}
@@ -125,7 +108,6 @@ document.getElementById("next").addEventListener('click', () => {
 	lbonne_option = entierAleatoire(1,2);
 	type_question = entierAleatoire(1,2);
 	type_media = list_of_media[num_playlist][0];
-	document.getElementById('bonnes_reponses').innerText="pasteque";
 	nb_question+=1;
 	if (nb_question<list_of_media.length+1)//on vérifie que le nombre de question ne dépasse pas la taille de la playlist( je n'ai pas eu le temps de faire en sorte )
 	{
@@ -185,6 +167,7 @@ document.getElementById("next").addEventListener('click', () => {
 				document.getElementById("titre").innerText="rentrez le titre de la chanson";
 				document.getElementById('libre').style.visibility='initial';
 				document.getElementById('QCM').style.visibility='hidden';
+				document.getElementById("titre_input").value='';
 			}
 		}
 	}
@@ -193,6 +176,8 @@ document.getElementById("next").addEventListener('click', () => {
 		document.getElementById('bonnes_reponses').innerText="votre nombre de bonne réponses est : " + bonnes_rep;
 		document.getElementById('libre').style.visibility='hidden';//on cache les questions
 		document.getElementById('QCM').style.visibility='hidden';
+		document.getElementById('next').style.visibility='hidden';
+		document.getElementById('valider').style.visibility='hidden';
 		document.getElementById('bonnes_reponses').style.visibility='initial';//on réaffiche le nombre de bonnes réponses
 	}
 });
@@ -263,8 +248,6 @@ document.getElementById("valider").addEventListener('click', () =>
 		if(document.getElementById("titre_input").value.toString() == list_of_media[num_playlist][1] )
 		{
 			bonnes_rep+=1;
-			document.getElementById('bonnes_reponses').innerText="pour_l'incrémentation"+bonnes_rep;
 		}
-		document.getElementById('bonnes_reponses').innerText=document.getElementById("titre_input").value.toString() == list_of_media[num_playlist][1];
 	}
 });
