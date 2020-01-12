@@ -79,10 +79,67 @@ input{
   margin : 0.3em;
 }
 
-#progress{
-  /* To complete */
+header
+{
+	color: #68dbff;
+	width: 1200px; /* choisir une image adaptée au format */
+	height: 416px;
+	margin:auto;
+	background:url("mesimages/headerbg.jpg");
+	padding-top:0.00001%;
+	position: relative;
+	top: -3px;
+	border-bottom: 2px groove silver;
 }
 
-.grid{
-  /* To complete */
+#myHeading
+{
+	text-shadow: 1px 1px 0px snow,1px -1px 0px snow,-1px -1px 0px snow,-1px 1px 0px snow;
+	text-align: center;
+	font-size: 4em;
+	font-family:'TimesH',serif;
+	position: relative;
+	top: 2px;
+}
+
+.mainmenu
+{
+	display: flex;
+	list-style-type: none;
+	justify-content:space-around;
+	position: relative;
+	top: 120px;
+	background-color: rgba(0,0,0,0.6);
+	border:none;
+}
+
+.menulast
+{
+	border-left:2px solid gold;
+}
+
+.menufirst, .menulast
+{
+	display: inline-block;
+	cursor:pointer;
+	width:325px;
+	height: 50px;
+	color:#f7bb45;
+	font-size:1.5em;
+	text-decoration: none;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.menufirst:hover, .menulast:hover
+{
+	text-decoration:underline;
+}
+#myHeading
+{
+	text-align: center;
+}
+#pour_recentrer
+{
+	text-align: center;
 }
