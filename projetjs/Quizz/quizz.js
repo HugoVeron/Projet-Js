@@ -92,7 +92,7 @@ document.getElementById("commencer").addEventListener('click', () => {//on comme
 	}
 });
 document.getElementById("next").addEventListener('click', () => {
-	//cette fonction est censée arréter la musique quand on clique sur le bouton envoyer, si une musique à été joué, cependant l'id attribué à la balise n'est plus reconnue, la commande ne marche donc pas
+	//cette fonction est censée arréter la musique quand on clique sur le bouton prochaine question si une musique à été joué, cependant l'id attribué à la balise n'est plus reconnue, la commande ne marche donc pas
 	/*if(music_is_playing)
 	{
 		document.getElementById("audio").innerHTML='';
@@ -215,7 +215,6 @@ document.getElementById("valider").addEventListener('click', () =>
 		if(document.getElementById("checkbox1").checked)//on actualise le score
 		{
 			bonnes_rep+=1;
-			document.getElementById('bonnes_reponses').innerText="pour_l'incrémentation"+bonnes_rep;
 		}				
 	}
 	else if (type_media == "video" && bonne_option==2)
@@ -223,7 +222,6 @@ document.getElementById("valider").addEventListener('click', () =>
 		if(document.getElementById("checkbox2").checked)//on actualise le score
 		{
 			bonnes_rep+=1;
-			document.getElementById('bonnes_reponses').innerText="pour_l'incrémentation"+bonnes_rep;
 		}				
 	}
 	else if (type_media == "song" && bonne_option==1 && type_question==1)
@@ -231,7 +229,6 @@ document.getElementById("valider").addEventListener('click', () =>
 		if(document.getElementById("checkbox1").checked)//on actualise le score
 		{
 			bonnes_rep+=1;
-			document.getElementById('bonnes_reponses').innerText="pour_l'incrémentation"+bonnes_rep;
 		}				
 	}
 	else if (type_media == "song" && bonne_option==2 && type_question==1)
@@ -239,7 +236,6 @@ document.getElementById("valider").addEventListener('click', () =>
 		if(document.getElementById("checkbox2").checked)//on actualise le score
 		{
 			bonnes_rep+=1;
-			document.getElementById('bonnes_reponses').innerText="pour_l'incrémentation"+bonnes_rep;
 		}				
 		
 	}

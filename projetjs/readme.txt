@@ -34,4 +34,16 @@ app.js :	Création de notre playlist par un Array de Array
 			replayplaylist qui rejoue la playlist
 			randomloopplaylist qui joue la playlist de maniere aléatoire
 
+--> Partie Quizz
+quizz.js :  on définit notre fonction pour générer l'aléatoire
+			on définit toutes les variables dont on va avoir besoin dans notre quizz, et on affiche les bons éléments
+			le bouton commencer et là pour faire intéragir l'utilisateur avec la page au cas ou la première question est une musique car les navigateurs interdisent la lecture automatique lorsque l'utilisateur n'a jamais intéragit avec la page
+			on gère les premières question lorsque l'utilisateur clique sur le bouton commencer
+			on gère les question suivant lorsque l'utilisateur clique sur le bouton prochaine question
+			on fait en sorte que seulement une seule checkbox puisse etre cochée en même temps
+			on gère la validation des réponses quand l'utilisateur clique sur  valider la réponse
+
+			il faut cliquer sur le bouton valider la reponse lorsqu'on a rempli sa réponse, si l'on clique plusieurs fois on aura plusieurs fois les points
+
+
 La partie inscription aurait pu se faire en ajax avec le traitement de l'inscription via une page php qui peut mettre des varibles de $_SESSION afin de toujours afficher le message lorsqu'on est connecté sur l'app --> JS peut ensuite récupéré les informations et les affichers mais on peut le faire en HTML x PHP, de plus avec un form il y a déjà du preg match regex sur le type mail
