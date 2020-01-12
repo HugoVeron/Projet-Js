@@ -7,51 +7,103 @@
 */
 
 /* Reset */
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
-span{
-	font-size: 90%;
-}
+/*
+	Dopetrope by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
-body {
+/* Reset */
 
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+
+/*
+	Dopetrope by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+body 
+{
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		color: #5d5d5d;
-    //border-bottom: 1px solid black;
-    padding : 2em;
-	}
-
-h2{
-  color: #252122;
-  font-weight: 300;
-  font-size: 1.7em;
-  letter-spacing: -0.035em;
-  margin: 0 0 .5em 0;
-}
-#myHeading {
-  color: #252122;
-  font-weight: 900;
-  font-size: 2.5em;
-  letter-spacing: -0.035em;
-  margin: 0 0 .5em 0;
 }
 
-
-p {
-  color: #24445C;
-  font-weight: 300;
-  font-size: 1.3em;
-  letter-spacing: -0.035em;
-  margin: 0 0 .5em 0;
+header
+{
+  background: #ff4f8a;
+  color:#FFFFFF;
+  text-align: center;
+  margin:0;
+  padding: 0;
 }
 
+h1
+{
+  font-weight: bold;
+  font-size: 3em;
+  margin:0;
+  padding-bottom: 0.1em;
+}
 
-button {
-    background-color: rgba(72, 201, 176, 0.8);
+#my_playlist
+{
+	display: none;
+}
+
+#pour_recentrer
+{
+	background: #fbd4ff;
+}
+
+#pour_recentrer>button
+{
+	background-color: rgba(72, 201, 176, 0.8);
+}
+
+.mp3media, .mp4media
+{
+  background: #fc1260;
+  margin: 0;
+  padding: 0.4em;
+  color: white;
+}
+
+#my_playlist>p
+{
+  text-align: center
+}
+
+#my_playlist>p>audio, #my_playlist>p>video
+{
+  display: none;
+}
+
+#control_on_playlist
+{
+  text-align: center;
+  margin:0;
+  background: #23A78F;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#control_on_playlist>button
+{
+  width: 60px;
+  height: 30px;
+}
+
+button 
+{
+    background-color: rgba(0, 0, 0, 0.3);
     border: none;
     color: white;
     border-radius: 4px;
-    padding: .5em .5em;
+    padding: .4em .4em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -59,80 +111,12 @@ button {
     margin : 0.3em;
 }
 
-input{
-  border-radius: 4px;
-  padding: .4em .4em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 11px;
-  margin : 0.3em;
+button:hover
+{
+  cursor: pointer;
 }
 
-header
-{
-	color: #68dbff;
-	width: 1200px; /* choisir une image adaptée au format */
-	height: 300px;
-	margin:auto;
-	background:url("mesimages/headerbg.jpg");
-	padding-top:0.00001%;
-	position: relative;
-	top: -3px;
-	border-bottom: 2px groove silver;
-}
-
-#myHeading
-{
-	text-shadow: 1px 1px 0px snow,1px -1px 0px snow,-1px -1px 0px snow,-1px 1px 0px snow;
-	text-align: center;
-	font-size: 4em;
-	font-family:'TimesH',serif;
-	position: relative;
-	top: 2px;
-}
-
-.mainmenu
-{
-	display: flex;
-	list-style-type: none;
-	justify-content:space-around;
-	position: relative;
-	background-color: rgba(0,0,0,0.6);
-	border:none;
-}
-
-.menulast
-{
-	border-left:2px solid gold;
-}
-
-.menufirst, .menulast
-{
-  display: inline-block;
-  cursor:pointer;
-  width:50%;
-  height: 100%;
-  color:#f7bb45;
-  font-size:1.5em;
-  text-decoration: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-.menufirst:hover, .menulast:hover
-{
-	text-decoration:underline;
-}
-#myHeading
-{
-	text-align: center;
-}
-#pour_recentrer
-{
-	text-align: center;
-}
+/* Formulaire d'inscription */
 
 #mock_form
 {
@@ -210,9 +194,6 @@ header
 
 .formi8
 {
-  position: relative;
-  left:500px ;
-  top: 0px;
   font-size: 1.7em;
   font-family: "TimesH",serif;
   background-color: #68dbff;
@@ -226,9 +207,100 @@ header
   cursor:pointer;
 }
 
+#confirmation_connexion {
+  text-align: center;
+  display: none;
+}
+
+#answer
+{
+  text-align: center;
+}
+
 .myfs1
 {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Formulaire d'inscription*/
+
+/* header */
+
+.titre_principal
+{
+  text-shadow: snow;
+  text-align: center;
+  font-size: 4em;
+  font-family:'TimesH',serif;
+  position: relative;
+  top: 2px;
+}
+
+.mainmenu
+{
+  display: flex;
+  list-style-type: none;
+  justify-content:space-around;
+  background-color: rgba(0,0,0,0.6);
+  border:none;
+}
+
+.menulast
+{
+  border-left:2px solid gold;
+  text-align: center;
+}
+
+.menufirst, .menulast
+{
+  display: inline-block;
+  cursor:pointer;
+  width:50%;
+  height: 100%;
+  color:#f7bb45;
+  font-size:1.5em;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.menufirst:hover, .menulast:hover
+{
+  text-decoration:underline;
+}
+#myHeading
+{
+  text-align: center;
+}
+#pour_recentrer
+{
+  text-align: center;
+}
+
+/* header */
+
+/* footer */
+
+.footerhome
+{
+  margin: auto;
+  text-align: center;
+  background-color: snow;
+  /*text-shadow: 1px 1px 1px black, -1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black;*/
+  font-style: italic;
+  border-top: 2px solid silver;
+}
+
+.mentionlegal
+{
+  font-size: 1em;
+}
+
+.prev
+{
+  color: white;
+  font-style: oblique;
 }
