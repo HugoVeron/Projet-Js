@@ -160,9 +160,6 @@ button:hover
 
 .formi8
 {
-  position: relative;
-  left:700px ;
-  top: 0px;
   font-size: 1.7em;
   font-family: "TimesH",serif;
   background-color: #68dbff;
@@ -174,6 +171,16 @@ button:hover
 .formi8:focus,.formi8:hover
 {
   cursor:pointer;
+}
+
+#confirmation_connexion {
+  text-align: center;
+  display: none;
+}
+
+#answer
+{
+  text-align: center;
 }
 
 .myfs1

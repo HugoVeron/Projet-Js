@@ -1,5 +1,5 @@
 // Start the application
-document.getElementById("confirmation_connexion").style.visibility="hidden";
+
 let prenom ;
 
 
@@ -242,10 +242,10 @@ document.getElementById("formi8").addEventListener('click', () =>
 {
 	connecte=true;
 	prenom=document.getElementById("Name").value + ".";
-	document.getElementById("confirmation_connexion").innerText="vous êtes bien inscrit et connecté madame/monsieur " + prenom; 
-	document.getElementById("myfs1").style.visibility="hidden";
-	document.getElementById("formi8").style.visibility="hidden";
-	document.getElementById("confirmation_connexion").style.visibility="initial";
+	document.getElementById("confirmation_connexion").innerText="Vous êtes bien inscrit et connecté " + prenom + "."; 
+	document.getElementById("myfs1").style.display="none";
+	document.getElementById("formi8").style.display="none";
+	document.getElementById("confirmation_connexion").style.display="initial";
 	document.getElementById('Surname').value='';
 	document.getElementById('Name').value='';
 	document.getElementById('email').value='';
