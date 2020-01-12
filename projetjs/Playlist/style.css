@@ -81,4 +81,104 @@ button:hover
   cursor: pointer;
 }
 
+/* Formulaire d'inscription */
 
+#mock_form
+{
+  padding-bottom: 10px;
+  background: #fffeed;
+}
+
+.myform
+{
+  position: relative;
+  left: 90px;
+}
+
+.form1, .form2, .form4
+{
+  font-family: "TimesH",serif;
+  font-size: 1.4em;
+}
+
+.formi1, .formi2, .formi4
+{
+  font-size: 1.4em;
+  font-family: "TimesH",serif;
+  border-color:white;
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.formi1:active, .formi2:active, .formi4:active
+{
+  background-color: #68dbff;
+}
+
+.formi1:focus, .formi2:focus, .formi4:focus
+{
+  background-color: #68dbff;
+}
+
+.form1
+{
+  position: relative;
+  left:20px;
+}
+
+.formi1
+{
+  position: relative;
+  left: 57px;
+  text-transform: uppercase;
+}
+
+.form2
+{
+  position: relative;
+  left:120px;
+}
+
+.formi2
+{
+  position: relative;
+  left: 146px;
+  text-transform: uppercase;
+}
+
+.form4
+{
+  position: relative;
+  left:20px;
+}
+
+.formi4
+{
+  position: relative;
+  left: 43px;
+}
+
+.formi8
+{
+  position: relative;
+  left:880px ;
+  top: 0px;
+  font-size: 1.7em;
+  font-family: "TimesH",serif;
+  background-color: #68dbff;
+  border:#68dbff;
+  border-radius: 4px;
+  border-style: solid;
+}
+
+.formi8:focus,.formi8:hover
+{
+  cursor:pointer;
+}
+
+.myfs1
+{
+  width: 1000px;
+}
+
+/* Formulaire d'inscription*/

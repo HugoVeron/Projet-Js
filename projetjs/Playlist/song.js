@@ -8,21 +8,32 @@ function Media(title,duration,isPlaying)
 
 	this.playm = function()
 	{
-		isPlaying = true;
 		// Lire le fichier audio ou vidéo
 		// Passer isPlaying à True
 		let my_media_to_play = document.getElementById(title);
 		my_media_to_play.play();
+		isPlaying=true;
 	}
 
-	this.stopm = function()
+	this.pausem = function()
 	{
-		isPlaying = false;
 		// Stopper le fichier audio ou vidéo
 		// Passer isPlaying à False
 		let my_media_to_play = document.getElementById(title);
 		my_media_to_play.pause();
 	}
+
+	this.resetmediareading = function()
+	{
+		let my_media_to_play = document.getElementById(title);
+		my_media_to_play.currentTime = 0;
+	}
+
+	this.getTitle = function() 
+	{
+		return title;
+	}
+
 }
 
 function Song(title,duration,isPlaying,artist,year,path)
@@ -46,7 +57,7 @@ function Song(title,duration,isPlaying,artist,year,path)
 
 		//création de mon élément audio
 		let audio = document.createElement('audio');
-		audio.setAttribute("controls","controls");
+		audio.setAttribute("controls","");
 		audio.setAttribute("src",path);
 		audio.setAttribute("id",title);
 		paragraphe.appendChild(audio);
@@ -54,11 +65,29 @@ function Song(title,duration,isPlaying,artist,year,path)
 		//création de mon élément button
 		let button = document.createElement('button');
 		button.setAttribute("type","button");
-		button.setAttribute("id",artist.concat("like"));
+		switch (artist) {
+			case "PLK":
+			button.setAttribute("onclick","likePLK()");
+			break;
+			case "Red Hot Chili Peppers":
+			button.setAttribute("onclick","likeRHCP()");
+			break;
+			case "Tobee":
+			button.setAttribute("onclick","likeTobee()");
+			break;
+			case "Vivaldi":
+			button.setAttribute("onclick","likeVivaldi()");
+			break;
+			case "Népal":
+			button.setAttribute("onclick","likeNepal()");
+			break;
+		}
+		
 
 		//création de mon élément img
 		let image = document.createElement('img');
 		image.setAttribute("src","../image/unlike.png");
+		image.setAttribute("id",artist.concat("like"));
 		image.setAttribute("alt","like or unlike");
 
 		// Finalisation de l'élément p avec le bouton like
@@ -70,7 +99,7 @@ function Song(title,duration,isPlaying,artist,year,path)
 
 Song.prototype = Object.create(Media.prototype);
 
-function Movie(title,duration,isPlaying,year,producer,path)
+function Movie(title,duration,isPlaying,producer,year,path)
 {
 	Media.call(this,title,duration,isPlaying);
 
@@ -92,11 +121,16 @@ function Movie(title,duration,isPlaying,year,producer,path)
 		//création de mon élément button
 		let button = document.createElement('button');
 		button.setAttribute("type","button");
-		button.setAttribute("id",producer.concat("like"));
+		switch (producer) {
+			case "Sardoche":
+			button.setAttribute("onclick","likeSardoche()");
+			break;
+		}
 
 		//création de mon élément img
 		let image = document.createElement('img');
 		image.setAttribute("src","../image/unlike.png");
+		image.setAttribute("id",producer.concat("like"));
 		image.setAttribute("alt","like or unlike");
 
 		// Finalisation de l'élément p avec le bouton like
@@ -109,7 +143,7 @@ function Movie(title,duration,isPlaying,year,producer,path)
 
 		//création de mon élément audio
 		let video = document.createElement('video');
-		video.setAttribute("controls","controls");
+		video.setAttribute("controls","");
 		video.setAttribute("src",path);
 		video.setAttribute("id",title);
 		paragraphe.appendChild(video);

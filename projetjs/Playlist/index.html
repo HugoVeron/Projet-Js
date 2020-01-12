@@ -12,20 +12,34 @@
   	</header>
 
   	<section>
+  		<article id="mock_form">
+  			<form method="post" action="Traitement-Contact.php" class="myform">
+	  			<fieldset class="myfs1">
+            		<legend>Vos coordonnées</legend>
+                    <label for="Surname" class="form1">Nom *  </label><input type="text" name="Surname" id="Surname" size="25" maxlength="25" placeholder="ex: Solane" required class="formi1" />
+                    <label for="Name" class="form2">Prénom *  </label><input type="text" name="Name" id="Name" size="25" maxlength="25" placeholder="ex:Alexandre" required class="formi2" /><br/><br/>
+                    <label for="email" class="form4">E-mail *  </label><input type="email" name="email" id="email" size="37" maxlength="50" placeholder="ex:prenomnom@gmail.com" required class="formi4" />
+                </fieldset>
+                <br/>
+                <input type="submit" name="Envoyez" value="Se connecter" class="formi8" title="Cliquez-ici pour envoyer !" />
+            </form>
+  		</article>
   		<article id="my_playlist">
   			<script type="text/javascript" src="song.js"></script>
   			<script type="text/javascript" src="playlist.js"></script>
   			<script type="text/javascript" src="app.js"></script>
   			<div id="control_on_playlist">
-			  	<button type="button" id="btn-play" onclick="playplaylist()">Play</button>
-			  	<button type="button" id="btn-next" onclick="nextplaylist()">Next</button>
-			  	<button type="button" id="btn-stop" onclick="stopplaylist()">Stop</button>
+			  	<button type="button" id="btn-play" onclick="playplaylist()"><img src="../image/play_16x16.png" alt="jouer" title="jouer"></button>
+			  	<button type="button" id="btn-previous" onclick="prevplaylist()"><img src="../image/prev_16x16.png" alt="précédente" title="précédente"></button>
+			  	<button type="button" id="btn-pause" onclick="pauseplaylist()"><img src="../image/pause_16x16.png" alt="pause" title="pause"></button>
+			  	<button type="button" id="btn-next" onclick="nextplaylist()"><img src="../image/next_16x16.png" alt="suivante" title="suivante"></button>
+			  	<button type="button" id="btn-stop" onclick="exitplaylist()"><img src="../image/stop_16x16.png" alt="stop" title="stop"></button>
+			  	<button type="button" id="btn-replay" onclick="replayplaylist()"><img src="../image/reload_16x16.png" alt="rejouer" title="rejouer"></button>
 			</div>
 		</article>
 	</section>
 
 	<footer>
-		
 	</footer>
   </body>
 </html>
