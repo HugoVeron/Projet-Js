@@ -11,60 +11,68 @@
     <header>
         <h1 id = "myHeading"> Amazing Quizz</h1>
         <nav class="mainmenu">                                          
-            <a class="menufirst" href="..\Playlist\index.html">Playlist</a>
-            <a class="menulast" href="..\Quizz\index.html">Quizz</a>
+            <a class="menufirst" href="../Playlist/index.html">Playlist</a>
+            <a class="menulast" href="../Quizz/index.html">Quizz</a>
             <br/><br/>
         </nav>
     </header>
-    <article id="mock_form">
-        <div class="myform">
-            <fieldset class="myfs1" id="myfs1">
-                <legend>Vos coordonnées</legend>
-                <label for="Surname" class="form1">Nom *  </label><input type="text" name="Surname" id="Surname" size="25" maxlength="25" placeholder="ex: Solane" required class="formi1" />
-                <label for="Name" class="form2" id="form2">Prénom *  </label><input type="text" name="Name" id="Name" size="25" maxlength="25" placeholder="ex:Alexandre" required class="formi2" /><br/><br/>
-                <label for="email" class="form4">E-mail *  </label><input type="email" name="email" id="email" size="37" maxlength="50" placeholder="ex:prenomnom@gmail.com" required class="formi4" />
-            </fieldset>
-            <br/>
-            <div>
-                <label for="confirmation_connexion" class="formi8" id="confirmation_connexion"> rzeraze</label>
-                <input type="submit" name="Envoyez" value="Se connecter" class="formi8" id="formi8" title="Cliquez-ici pour envoyer !" />
+
+    <section>
+        <article id="mock_form">
+            <div class="myform">
+                <fieldset class="myfs1" id="myfs1">
+                    <legend>Vos coordonnées</legend>
+                    <label for="Surname" class="form1">Nom *  </label><input type="text" name="Surname" id="Surname" size="25" maxlength="25" placeholder="ex: Solane" required class="formi1" />
+                    <label for="Name" class="form2" id="form2">Prénom *  </label><input type="text" name="Name" id="Name" size="25" maxlength="25" placeholder="ex:Alexandre" required class="formi2" /><br/><br/>
+                    <label for="email" class="form4">E-mail *  </label><input type="email" name="email" id="email" size="37" maxlength="50" placeholder="ex:prenomnom@gmail.com" required class="formi4" />
+                </fieldset>
+                <br/>
+                <div id="answer">
+                    <label for="confirmation_connexion" id="confirmation_connexion"></label>
+                    <input type="submit" name="Envoyez" value="Se connecter" class="formi8" id="formi8" title="Cliquez-ici pour envoyer !" />
+                </div>
             </div>
-        </div>
-    </article>
+        </article>
 
-    <div id="pour_recentrer">
-        <button id = "commencer">commencer le quizz</button>
-        <div id="libre">
-            <!--<article id="my_playlist">-->
-            <label for="titre" id="titre"></label>
-            <input type="text" name="titre_input" id="titre_input" required>
-            <span id="aidetitre"></span>
-            <!--</article>-->
-        </div>
-        
-        <div id="QCM">
-            <label for="question" id="question"></label>
-			<div>
-				<input type="checkbox" id="checkbox1" name="checkbox1">
-				<label for="checkbox1" id="option1">option1</label>
-			</div>
+        <article id="my_playlist"></article>
+
+        <article id="pour_recentrer">
+            <button id = "commencer">commencer le quizz</button>
+            <div id="libre">
+                <!--<article id="my_playlist">-->
+                <label for="titre" id="titre"></label>
+                <input type="text" name="titre_input" id="titre_input" required>
+                <span id="aidetitre"></span>
+                <!--</article>-->
+            </div>
+            
+            <div id="QCM">
+                <label for="question" id="question"></label>
+    			<div>
+    				<input type="checkbox" id="checkbox1" name="checkbox1">
+    				<label for="checkbox1" id="option1">option1</label>
+    			</div>
+                <div>
+    				<input type="checkbox" id="checkbox2" name="checkbox2">
+    				<label for="checkbox2" id="option2">option2</label>
+    			</div>
+            </div>
+
             <div>
-				<input type="checkbox" id="checkbox2" name="checkbox2">
-				<label for="checkbox2" id="option2">option2</label>
-			</div>
-        </div>
+                <label for="bonnes_reponses" id="bonnes_reponses">playlist</label>
+            </div>
+    	<button id = "valider">valider la réponse</button>
+        </article>
 
-        <div>
-            <label for="bonnes_reponses" id="bonnes_reponses">playlist</label>
-        </div>
-	<button id = "valider">valider la réponse</button>
-    </div>
-    <script src="..\Playlist\song.js"></script>
-    <script src="..\Playlist\playlist.js"></script>
-    <script src="..\Playlist\app.js"></script>
-	<script src = "quizz.js"></script>
-	
+        <script src="../Playlist/song.js"></script>
+        <script src="../Playlist/playlist.js"></script>
+        <script src="../Playlist/app.js"></script>
+    	<script src = "quizz.js"></script>
+	</section>
+
+    <footer class="footerhome">
+        <p class="mentionlegal">Copyright © 2020 All rights reserved.<br/>Made by Solane Alexandre & Veron Hugo<br/><span class="prev">WebMaster & WebDesigner</span></p>
+    </footer>
 
   </body>
-
 </html>
