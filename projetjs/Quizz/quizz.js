@@ -8,6 +8,7 @@ document.getElementById('QCM').style.visibility='hidden';
 document.getElementById('libre').style.visibility='hidden';
 document.getElementById('valider').style.visibility='hidden';
 document.getElementById('bonnes_reponses').style.visibility='hidden';
+document.getElementById("confirmation_connexion").style.visibility="hidden"
 
 let audio;// Création de la balise pour jouer les musiqques lors du blind test
 let music_is_playing= false;// création de la variable utilisée pour savoir si une musique est en train d'être jouée
@@ -272,3 +273,16 @@ document.getElementById("checkbox1").addEventListener('click', () =>
 	document.getElementById("checkbox2").checked=false;
 });
 
+
+document.getElementById("formi8").addEventListener('click', () => 
+{
+	let connecte=true;
+	prenom=document.getElementById("Name").value + ".";
+	document.getElementById("confirmation_connexion").innerText="vous êtes bien inscrit et connecté madame/monsieur " + prenom; 
+	document.getElementById("myfs1").style.visibility="hidden";
+	document.getElementById("formi8").style.visibility="hidden";
+	document.getElementById("confirmation_connexion").style.visibility="initial";
+	document.getElementById('Surname').value='';
+	document.getElementById('Name').value='';
+	document.getElementById('email').value='';
+});

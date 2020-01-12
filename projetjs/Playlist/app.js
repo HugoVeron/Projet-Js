@@ -1,4 +1,8 @@
 // Start the application
+document.getElementById("confirmation_connexion").style.visibility="hidden";
+let prenom ;
+
+
 
 let media_1 = ["song","Un peu de haine","0:16","false","PLK","2019","../media/plk-un-peu-de-haine-clip-officiel.mp3"];
 let media_2 = ["song","Rien d'spécial","0:16","false","Népal","2019","../media/nepal-rien-dspecial-laxvision.mp3"];
@@ -203,4 +207,15 @@ function likeNepal() {
 	}
 }
 
-
+document.getElementById("formi8").addEventListener('click', () => 
+{
+	connecte=true;
+	prenom=document.getElementById("Name").value + ".";
+	document.getElementById("confirmation_connexion").innerText="vous êtes bien inscrit et connecté madame/monsieur " + prenom; 
+	document.getElementById("myfs1").style.visibility="hidden";
+	document.getElementById("formi8").style.visibility="hidden";
+	document.getElementById("confirmation_connexion").style.visibility="initial";
+	document.getElementById('Surname').value='';
+	document.getElementById('Name').value='';
+	document.getElementById('email').value='';
+});
