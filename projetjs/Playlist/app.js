@@ -48,6 +48,7 @@ function playplaylist() {
 		let btn_pause = document.getElementById("btn-pause").style.background = "rgba(0, 0, 0, 0.3)";
 		let btn_replay = document.getElementById("btn-replay").style.background = "rgba(0, 0, 0, 0.3)";
 		let btn_stop = document.getElementById("btn-stop").style.background = "rgba(0, 0, 0, 0.3)";
+		let btn_random = document.getElementById("btn-random").style.background = "rgba(0, 0, 0, 0.3)";
 	}
 }
 	
@@ -60,6 +61,7 @@ function pauseplaylist() {
 	let btn_pause = document.getElementById("btn-pause").style.background = "white";
 	let btn_replay = document.getElementById("btn-replay").style.background = "rgba(0, 0, 0, 0.3)";
 	let btn_stop = document.getElementById("btn-stop").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_random = document.getElementById("btn-random").style.background = "rgba(0, 0, 0, 0.3)";
 }
 
 // Fonction pour passer au prochain media dans la playlist
@@ -83,6 +85,7 @@ function nextplaylist() {
 		let btn_pause = document.getElementById("btn-pause").style.background = "rgba(0, 0, 0, 0.3)";
 		let btn_replay = document.getElementById("btn-replay").style.background = "rgba(0, 0, 0, 0.3)";
 		let btn_stop = document.getElementById("btn-stop").style.background = "rgba(0, 0, 0, 0.3)";
+		let btn_random = document.getElementById("btn-random").style.background = "rgba(0, 0, 0, 0.3)";
 	}
 }
 
@@ -98,6 +101,7 @@ function prevplaylist() {
 	let btn_pause = document.getElementById("btn-pause").style.background = "rgba(0, 0, 0, 0.3)";
 	let btn_replay = document.getElementById("btn-replay").style.background = "rgba(0, 0, 0, 0.3)";
 	let btn_stop = document.getElementById("btn-stop").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_random = document.getElementById("btn-random").style.background = "rgba(0, 0, 0, 0.3)";
 }
 
 // Fonction pour arreter la lecture totale de la playlist
@@ -109,6 +113,7 @@ function stopplaylist() {
 	let btn_pause = document.getElementById("btn-pause").style.background = "rgba(0, 0, 0, 0.3)";
 	let btn_replay = document.getElementById("btn-replay").style.background = "rgba(0, 0, 0, 0.3)";
 	let btn_stop = document.getElementById("btn-stop").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_random = document.getElementById("btn-random").style.background = "rgba(0, 0, 0, 0.3)";
 }
 
 // Fonction similaire à exit pour stopper la playlist
@@ -126,6 +131,7 @@ function exitplaylist() {
 	let btn_pause = document.getElementById("btn-pause").style.background = "rgba(0, 0, 0, 0.3)";
 	let btn_replay = document.getElementById("btn-replay").style.background = "rgba(0, 0, 0, 0.3)";
 	let btn_stop = document.getElementById("btn-stop").style.background = "white";
+	let btn_random = document.getElementById("btn-random").style.background = "rgba(0, 0, 0, 0.3)";
 }
 
 // Fonction pour rejouer au début la playlist
@@ -140,6 +146,7 @@ function replayplaylist() {
 	let btn_pause = document.getElementById("btn-pause").style.background = "rgba(0, 0, 0, 0.3)";
 	let btn_replay = document.getElementById("btn-replay").style.background = "white";
 	let btn_stop = document.getElementById("btn-stop").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_random = document.getElementById("btn-random").style.background = "rgba(0, 0, 0, 0.3)";
 }
 
 // Fonction pour jouer en boucle la playlist aléatoirement
@@ -157,6 +164,13 @@ function randomloopplaylist() {
 		randomloopplaylist();
 		}
 	}
+	let btn_play = document.getElementById("btn-play").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_prev = document.getElementById("btn-previous").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_next = document.getElementById("btn-next").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_pause = document.getElementById("btn-pause").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_replay = document.getElementById("btn-replay").style.background = "white";
+	let btn_stop = document.getElementById("btn-stop").style.background = "rgba(0, 0, 0, 0.3)";
+	let btn_random = document.getElementById("btn-random").style.background = "white";
 }
 
 // Fonctions pour générer le like ou unlike en fonction de chaque artiste
