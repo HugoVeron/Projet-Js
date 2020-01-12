@@ -81,7 +81,6 @@ button:hover
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 /* Formulaire d'inscription */
 
 #mock_form
@@ -183,19 +182,8 @@ button:hover
 }
 
 /* Formulaire d'inscription*/
-=======
-header
-{
-  color: #68dbff;
-  width: 1200px; /* choisir une image adaptée au format */
-  height: 416px;
-  margin:auto;
-  background:url("mesimages/headerbg.jpg");
-  padding-top:0.00001%;
-  position: relative;
-  top: -3px;
-  border-bottom: 2px groove silver;
-}
+
+/* header */
 
 .titre_principal
 {
@@ -248,4 +236,5 @@ header
 {
   text-align: center;
 }
->>>>>>> 494c771c207e492d4c7e1f6b5ba140c477d2f06c
+
+/* header */

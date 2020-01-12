@@ -1,20 +1,11 @@
 // Start the application
 
-<<<<<<< HEAD
 let media_1 = ["song","Un peu de haine","0:16","false","PLK","2019","../media/plk-un-peu-de-haine-clip-officiel.mp3"];
 let media_2 = ["song","Rien d'spécial","0:16","false","Népal","2019","../media/nepal-rien-dspecial-laxvision.mp3"];
 let media_3 = ["song","Summer The Four Seasons","0:16","false","Vivaldi","1723","../media/vivaldi-summer-the-four-seasons.mp3"];
 let media_4 = ["song","Mach den hub hub hub","0:16","false","Tobee","2017","../media/tobee-helikopter-117-mach-den-hub-hub-hub-offizielles-video.mp3"];
 let media_5 = ["song","Californication","0:17","false","Red Hot Chili Peppers","1999","../media/red-hot-chili-peppers-californication-official-music-video.mp3"];
 let media_6 = ["video","Abordable","0:10","false","Sardoche","2019","../media/Sardoche_react.mp4"]
-=======
-media_1 = ["song","Un peu de haine","0:16","false","PLK","2019","../media/plk-un-peu-de-haine-clip-officiel.mp3"];
-media_2 = ["song","Rien d'spécial","0:16","false","Népal","2019","../media/nepal-rien-dspecial-laxvision.mp3"];
-media_3 = ["song","Summer The Four Seasons","0:16","false","Vivaldi","1723","../media/vivaldi-summer-the-four-seasons.mp3"];
-media_4 = ["song","Mach den hub hub hub","0:16","false","Tobee","2017","../media/tobee-helikopter-117-mach-den-hub-hub-hub-offizielles-video.mp3"];
-media_5 = ["song","Californication","0:16","false","Red Hot Chili Peppers","1999","../media/red-hot-chili-peppers-californication-official-music-video.mp3"];
-media_6 = ["video","Abordable","0:10","false","Sardoche","2019","../media/Sardoche_react.mp4"]
->>>>>>> 494c771c207e492d4c7e1f6b5ba140c477d2f06c
 
 let list_of_media = [];
 
