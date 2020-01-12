@@ -11,7 +11,6 @@ body
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		color: #5d5d5d;
-    padding: 0.5em;
 }
 
 header
@@ -54,6 +53,8 @@ h1
   text-align: center;
   margin:0;
   background: #23A78F;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 #control_on_playlist>button
@@ -91,8 +92,7 @@ button:hover
 
 .myform
 {
-  position: relative;
-  left: 90px;
+  padding-top: 20px;
 }
 
 .form1, .form2, .form4
@@ -179,6 +179,8 @@ button:hover
 .myfs1
 {
   width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Formulaire d'inscription*/
@@ -187,7 +189,7 @@ button:hover
 
 .titre_principal
 {
-  text-shadow: 1px 1px 0px snow,1px -1px 0px snow,-1px -1px 0px snow,-1px 1px 0px snow;
+  text-shadow: snow;
   text-align: center;
   font-size: 4em;
   font-family:'TimesH',serif;
@@ -200,8 +202,6 @@ button:hover
   display: flex;
   list-style-type: none;
   justify-content:space-around;
-  position: relative;
-  top: 120px;
   background-color: rgba(0,0,0,0.6);
   border:none;
 }
